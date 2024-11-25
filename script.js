@@ -4,7 +4,7 @@ document.getElementById('upload-form').addEventListener('submit', async (e) => {
     const formData = new FormData();
     formData.append('file', fileInput.files[0]);
 
-    const response = await fetch('http://127.0.0.1:5000/analyze', {
+    const response = await fetch('http://127.0.0.1:5000', {
         method: 'POST',
         body: formData
     });
