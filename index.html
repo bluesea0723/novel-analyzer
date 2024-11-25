@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小説分析ツール</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>小説の感情と文章スタイル分析</h1>
+    <form id="upload-form">
+        <label for="file">テキストファイルをアップロードしてください:</label>
+        <input type="file" id="file" accept=".txt" required>
+        <button type="submit">分析する</button>
+    </form>
+    <div id="results">
+        <h2>分析結果:</h2>
+        <pre id="output"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
